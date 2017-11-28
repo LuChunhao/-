@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="item_normal">#fff</color>
+    <color name="item_pressed">#eee</color>
+    <color name="text_color_gray">#b6b6b6</color>
+    <color name="text_color_red">#f00</color>
+    <color name="tab_text_default_color">#b3ffffff</color>
+	<color name="circle_border_color">#fff</color>
+    <drawable name="list_divider">#efefef</drawable>
+
+    <color name="sc_transparent_background">#00111111</color>
+    <color name="font_black">#ff000000</color>
+    <color name="dialog_title_font">#56c8e6</color>
+    <color name="selected_blue">#07b7dd</color>
+    <color name="font_gray">#858585</color>
+    <color name="font_darker_gray">#666</color>
+    <color name="font_lighter_gray">#aaa</color>
+    <color name="font_pressed">#dddddd</color>
+    <color name="font_white">#ffffff</color>
+    <color name="contact_us_font">#155595</color>
+    <color name="main_bg">#f7f7f7</color>
+    <color name="default_icon_bg">#e0e0e0</color>
+
+    <drawable name="contact_us_line_bg">#f2f2f2</drawable>
+
+    <color name="tabbar_bg">#f7f7f7</color>
+    <color name="secondary_text_disabled_material_light">#24000000</color>
+    <color name="secondary_text_default_material_light">#8a000000</color>
+    <color name="secondary_text_default_material_dark">#b3ffffff</color>
+    <color name="secondary_text_disabled_material_dark">#36ffffff</color>
+
+    <color name="cancel_gray">#919ba4</color>
+    <color name="photo_click">#505a64</color>
+</resources>

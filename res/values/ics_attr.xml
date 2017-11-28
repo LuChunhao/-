@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <declare-styleable name="IcsDividerStyle">
+        <attr name="divider_drawable" format="reference" />
+        <attr name="divider_padding" format="dimension" />
+        <attr name="divider_location" format="integer" />
+    </declare-styleable>
+</resources>

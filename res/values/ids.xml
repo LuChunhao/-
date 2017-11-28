@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="title_bar" type="id"/>
+    <item name="image_url" type="id"/>
+    <item name="tag" type="id"/>
+    <item name="toggle_tag" type="id"/>
+    <item name="back_tag" type="id"/>
+    <item name="search_tag" type="id"/>
+    <item name="overflow_tag" type="id"/>
+
+</resources>

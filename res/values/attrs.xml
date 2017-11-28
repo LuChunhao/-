@@ -1,0 +1,65 @@
+<resources>
+
+    <declare-styleable name="ActionBar">
+        <attr name="actionBarTitle" format="reference|string" />
+        <attr name="actionBarMode">
+            <flag name="secondary" value="0x2" />
+            <flag name="none" value="0x3" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="ViewPagerTitleIndicator">
+        <attr name="text_arr" format="integer" />
+        <attr name="text_color" format="color" />
+        <attr name="text_selected_color" format="color" />
+        <attr name="text_size" format="dimension" />
+        <attr name="text_selected_size" format="dimension" />
+        <attr name="text_seleted_tag" format="integer" />
+        <attr name="text_default_id" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="PullToRefresh">
+        <attr name="ptrAdapterViewBackground" format="reference|color" />
+        <attr name="ptrHeaderBackground" format="reference|color" />
+        <attr name="ptrHeaderTextColor" format="reference|color" />
+        <attr name="ptrHeaderSubTextColor" format="reference|color" />
+        <attr name="ptrMode">
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+            <flag name="both" value="0x3" />
+        </attr>
+        <attr name="ptrShowIndicator" format="reference|boolean" />
+        <attr name="ptrDrawable" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="TasksCompletedView">
+        <attr name="radius" format="dimension" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="circleColor" format="color" />
+        <attr name="ringColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+      <declare-styleable name="DrawerArrowToggle">
+
+        <!-- The drawing color for the bars -->
+        <attr name="color" format="color" />
+        <!-- Whether bars should rotate or not during transition -->
+        <attr name="spinBars" format="boolean" />
+        <!-- The total size of the drawable -->
+        <attr name="drawableSize" format="dimension" />
+        <!-- The max gap between the bars when they are parallel to each other -->
+        <attr name="gapBetweenBars" format="dimension" />
+        <!-- The size of the top and bottom bars when they merge to the middle bar to form an arrow -->
+        <attr name="topBottomBarArrowSize" format="dimension" />
+        <!-- The size of the middle bar when top and bottom bars merge into middle bar to form an arrow -->
+        <attr name="middleBarArrowSize" format="dimension" />
+        <!-- The size of the bars when they are parallel to each other -->
+        <attr name="barSize" format="dimension" />
+        <!-- The thickness (stroke size) for the bar paint -->
+        <attr name="thickness" format="dimension" />
+    </declare-styleable>
+
+    <attr name="drawerArrowStyle" format="reference" />
+    
+</resources>

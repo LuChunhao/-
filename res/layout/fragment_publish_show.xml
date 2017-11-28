@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+     >
+	<View 
+	   android:layout_width="match_parent"
+	   android:layout_height="@dimen/dp250" 
+	   android:background="#000000"
+	   android:alpha="0.5"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp100"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/iv_close_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:background="@drawable/ic_close_selector" />
+
+        <TextView
+            android:id="@+id/tv_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:text="发表"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/sp16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_bg" >
+
+        <GridView
+            android:id="@+id/gv_publish_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp20"
+            android:cacheColorHint="@color/main_bg"
+            android:horizontalSpacing="@dimen/dp15"
+            android:layout_above="@+id/et_publish_description"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/dp10" >
+        </GridView>
+        <EditText 
+            android:id="@+id/et_publish_description"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp100"
+            android:paddingLeft="@dimen/dp10"
+            android:layout_alignParentBottom="true"
+            android:background="@color/font_darker_gray"
+            android:singleLine="true"
+            android:maxLength="100"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical|left"
+            android:hint="顺便说两句话描述一下吧？"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <cn.falconnect.shopping.tabs.FragmentPagerTabGroup
+        android:id="@+id/main_tabgroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/titlebar_bg" >
+
+        <LinearLayout
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp72"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp12" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="推荐"
+                android:textColor="@drawable/tab_text_selector"
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="晒晒"
+                android:textColor="@drawable/tab_text_selector"
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="探秘"
+                android:textColor="@drawable/tab_text_selector"
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="所有"
+                android:textColor="@drawable/tab_text_selector"
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </cn.falconnect.shopping.tabs.FragmentPagerTabGroup>
+
+</LinearLayout>

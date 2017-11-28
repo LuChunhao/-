@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/more_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:clickable="true" >
+
+    <cn.falconnect.shopping.title.TitleBar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:actionBarMode="none"
+        app:actionBarTitle="@string/feedback" />
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="@dimen/dp20" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/contact_us_detail"
+                android:textColor="@color/font_black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_suggest"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp350"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/input_bg"
+                android:gravity="start"
+                android:hint="@string/suggest_hint"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="7dp"
+                    android:gravity="center"
+                    android:text="@string/qq"
+                    android:textColor="@color/font_black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_qq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:background="@drawable/input_bg"
+                    android:gravity="center_vertical"
+                    android:hint="@string/qq_content"
+                    android:singleLine="true"
+                    android:textColor="@color/font_gray"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_submmit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="@dimen/dp40"
+                android:background="@drawable/login_selector"
+                android:text="提交"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

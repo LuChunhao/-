@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="talking_data" type="bool">true</item>
+    <string name="app_name">猫奴商城</string>
+    <string name="sub_app_name">龙猫专卖</string>
+	<color name="titlebar_bg">#90cf93</color>
+	<color name="web_progress">#f2c035</color>
+	<color name="btn_not_click">#5daf68</color>
+	<color name="btn_click">#488450</color>
+	<string name="adcocoa_id">16238154c0ff5e70f82d19f08bdef048</string>
+	<string name="td_app_id">1F0E11ED509CFB780DCC25324AEBFBE6</string>
+	<string name="guide_one_words">过年啦...</string>
+	<string name="guide_two_words">又有压岁钱啦...</string>
+	<string name="guide_three_words">赶紧晒出你的年货吧...</string>
+	<string name="about_desc">我们致力于给每一个顾客最优质的购物体验！</string>
+	<string name="comment_desc">用户</string>
+</resources>

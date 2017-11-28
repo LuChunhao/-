@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/othermainlayout"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/other_center_bcakgroud"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp480"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/iv_centerbackgroud"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/person_back"
+            android:scaleType="centerCrop" />
+
+        <cn.falconnect.shopping.widget.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_center_head"
+            android:layout_width="@dimen/dp150"
+            android:layout_height="@dimen/dp150"
+            android:layout_centerInParent="true"
+            android:src="@drawable/default_circle_icon"
+            app:border_color="@color/circle_border_color"
+            app:border_width="1dp" />
+
+        <org.aurora.library.views.text.MarqueeTextView
+            android:id="@+id/tv_other_nickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_logout"
+            android:layout_alignLeft="@+id/iv_center_head"
+            android:layout_alignRight="@+id/iv_center_head"
+            android:layout_below="@+id/iv_center_head"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:drawablePadding="@dimen/dp10"
+            android:gravity="center"
+            android:maxLength="12"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp15" />
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="@dimen/dp200"
+            android:layout_height="@dimen/dp1"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logout_selector"
+            android:gravity="center"
+            android:text="@string/logout"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp16"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp108"
+        android:layout_alignTop="@+id/rl_login"
+        android:background="@android:color/transparent"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/dp88"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_other_center_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/overflow_tag"
+            android:layout_toRightOf="@+id/iv_back"
+            android:gravity="left|center_vertical"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp20" />
+    </RelativeLayout>
+
+    <org.aurora.library.views.waterfall.PLA.view.PlaWaterfallListView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/other_show_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/other_center_bcakgroud"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        app:plaColumnNumber="2" />
+
+</RelativeLayout>

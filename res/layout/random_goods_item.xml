@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/waterfall_item_selector" >
+
+    <org.aurora.library.views.waterfall.PLA.alternative.widget.ScaleImageView
+        android:id="@+id/iv_goods"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_icon_bg"
+   />
+
+    <RelativeLayout
+        android:id="@+id/rl_brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_goods"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/dp6"
+        android:paddingLeft="@dimen/dp4"
+        android:paddingRight="@dimen/dp4"
+        android:paddingTop="@dimen/dp6" >
+
+        <TextView
+            android:id="@+id/tv_goods_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_collect"
+            android:textSize="@dimen/sp14"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_collect"
+            android:layout_width="@dimen/dp51"
+            android:layout_height="@dimen/dp50"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_goods_name"
+            android:src="@drawable/ic_collects_1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_brand"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/dp6"
+        android:paddingLeft="@dimen/dp4"
+        android:paddingRight="@dimen/dp4" >
+
+        <TextView
+            android:id="@+id/tv_goods_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_goods_discount"
+            android:textColor="@color/text_color_red"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:id="@+id/tv_goods_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/dp10"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/sp14" />
+    </RelativeLayout>
+
+</RelativeLayout>

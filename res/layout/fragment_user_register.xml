@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/titlebar_bg"
+    android:clickable="true"
+    android:orientation="vertical" >
+    <cn.falconnect.shopping.title.TitleBar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:actionBarMode="none"
+        app:actionBarTitle="@string/register" />
+    <EditText
+        android:id="@+id/et_register_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp30"
+        android:layout_marginRight="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp70"
+        android:background="@drawable/input_bg"
+        android:hint="请输入邮箱账号"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
+        android:maxLength="25"
+        android:singleLine="true" 
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/et_register_passwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp30"
+        android:layout_marginRight="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp70"
+        android:background="@drawable/input_bg"
+        android:hint="请输入密码"
+        android:imeOptions="actionNext"
+        android:maxLength="16"
+        android:password="true"
+        android:singleLine="true" 
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/et_register_passwd_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp30"
+        android:layout_marginRight="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp70"
+        android:background="@drawable/input_bg"
+        android:hint="请再次输入密码"
+        android:imeOptions="actionDone"
+        android:maxLength="16"
+        android:password="true"
+        android:singleLine="true" 
+        android:textColor="#000000"/>
+
+    <ProgressBar
+        android:id="@+id/register_progress"
+        android:layout_marginTop="20dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@anim/loading"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:background="@drawable/login_selector"
+        android:text="@string/commit"
+        android:textSize="18sp"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

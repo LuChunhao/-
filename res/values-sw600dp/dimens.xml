@@ -1,0 +1,6 @@
+<resources>
+
+    <dimen name="nav_drawer_width">272dp</dimen>
+    <dimen name="comment_drawer_width">288dp</dimen>
+
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/titlebar_bg"
+    android:orientation="vertical" >
+
+    <cn.falconnect.shopping.title.TitleBar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:actionBarMode="none"
+        app:actionBarTitle="@string/find_passwd" />
+
+    <EditText
+        android:id="@+id/et_registered_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp30"
+        android:layout_marginRight="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp70"
+        android:background="@drawable/input_bg"
+        android:hint="请输入您注册邮箱"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btn_find_passwd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dp30"
+        android:layout_marginRight="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp70"
+        android:background="@drawable/login_selector"
+        android:gravity="center"
+        android:text="@string/commit"
+        android:textSize="18sp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp80"
+        android:textColor="#ffffff"
+        android:text="亲！请到你的注册邮箱接受验证信息" />
+
+</LinearLayout>

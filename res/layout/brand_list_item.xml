@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/waterfall_item_selector" >
+
+    <RelativeLayout
+        android:id="@+id/rl_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/dp15"
+        android:paddingLeft="@dimen/dp8"
+        android:paddingRight="@dimen/dp8"
+        android:paddingTop="@dimen/dp15" >
+
+        <TextView
+            android:id="@+id/tv_brand_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/sp15"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_brand_discount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp30"
+            android:layout_toRightOf="@+id/tv_brand_name"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/sp13" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_brand_goods"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp300"
+        android:layout_below="@+id/rl_logo"
+        android:scaleType="fitXY" />
+
+</RelativeLayout>

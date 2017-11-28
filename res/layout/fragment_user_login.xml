@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/titlebar_bg"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <cn.falconnect.shopping.title.TitleBar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:actionBarMode="none"
+        app:actionBarTitle="@string/login" />
+
+    <EditText
+        android:id="@+id/et_login_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp30"
+        android:layout_marginRight="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp70"
+        android:background="@drawable/input_bg"
+        android:hint="请输入邮箱账号"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:singleLine="true" 
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/et_login_passwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp30"
+        android:layout_marginRight="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp70"
+        android:background="@drawable/input_bg"
+        android:hint="密码"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColor="#000000" />
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:indeterminateDrawable="@anim/loading"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dp30"
+        android:layout_marginRight="@dimen/dp30"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_selector"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp80"
+        android:paddingLeft="@dimen/dp30"
+        android:paddingRight="@dimen/dp30" >
+
+        <TextView
+            android:id="@+id/tv_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp30"
+            android:layout_marginRight="@dimen/dp30"
+            android:layout_centerVertical="true"
+            android:text="@string/forget_passwd"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp18" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="@dimen/dp260"
+            android:layout_height="@dimen/dp100"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/register_selector"
+            android:gravity="center"
+            android:text="@string/register_user"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp16" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp8"
+    android:paddingRight="@dimen/dp8" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:paddingBottom="@dimen/dp3"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp8"
+        android:paddingRight="@dimen/dp8" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp95"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp60"
+            android:text="选择" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <Button
+            android:id="@+id/btn_dialog_photo_camare"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp86"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp60"
+            android:text="拍照" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/dp60"
+            android:background="#000000" />
+
+        <Button
+            android:id="@+id/btn_dialog_photo_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp86"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp60"
+            android:text="从相册选取" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/dp60"
+            android:background="#000000" />
+
+        <Button
+            android:id="@+id/btn_dialog_photo_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp86"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp60"
+            android:text="取消" />
+
+    </LinearLayout>
+
+</LinearLayout>

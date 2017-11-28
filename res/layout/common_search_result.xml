@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical" >
+
+    <cn.falconnect.shopping.title.TitleBar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:actionBarMode="none"
+        app:actionBarTitle="@string/app_name"
+        />
+
+    <cn.falconnect.shopping.tabs.FragmentPagerTabGroup
+        android:id="@+id/result_tabgroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/titlebar_bg" >
+
+        <LinearLayout
+            xmlns:ics="http://schemas.android.com/apk/res-auto"
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp72"
+            android:orientation="horizontal" />
+    </cn.falconnect.shopping.tabs.FragmentPagerTabGroup>
+
+</LinearLayout>

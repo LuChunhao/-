@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detail_topic_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg" >
+
+    <RelativeLayout
+        android:id="@+id/rl_avatar"
+        android:layout_width="@dimen/dp108"
+        android:layout_height="@dimen/dp108"
+        android:layout_margin="@dimen/dp18" >
+
+        <cn.falconnect.shopping.widget.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/default_circle_icon"
+            app:border_color="@color/circle_border_color"
+            app:border_width="1dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/waterfall_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rl_avatar"
+        android:layout_marginRight="@dimen/dp18"
+        android:layout_toRightOf="@+id/rl_avatar"
+        android:paddingBottom="@dimen/dp8" >
+
+        <TextView
+            android:id="@+id/tv_nick_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/tv_post_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_nick_name"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/sp15"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <org.aurora.library.views.waterfall.PLA.view.PlaWaterfallListView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/show_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp420"
+        android:layout_alignLeft="@+id/waterfall_header"
+        android:layout_alignRight="@+id/waterfall_header"
+        android:layout_below="@+id/waterfall_header"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        app:plaColumnNumber="3" />
+   
+   <RelativeLayout 
+        android:id="@+id/comments_layout"
+         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/show_list"
+        android:layout_marginTop="@dimen/dp10"
+        />
+
+</RelativeLayout>

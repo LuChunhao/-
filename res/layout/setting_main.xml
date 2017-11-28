@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            style="@style/setting_preference_style"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_user_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false" >
+
+                <ImageView
+                    android:id="@+id/user_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/setting_back" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp40" >
+
+                    <cn.falconnect.shopping.widget.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/iv_setting_head"
+                        android:layout_width="@dimen/dp150"
+                        android:layout_height="@dimen/dp150"
+                        android:src="@drawable/default_circle_icon"
+                        app:border_color="@color/circle_border_color"
+                        app:border_width="1dp" />
+
+                    <org.aurora.library.views.text.MarqueeTextView
+                        android:id="@+id/tv_setting_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/iv_setting_head"
+                        android:layout_alignRight="@+id/iv_setting_head"
+                        android:layout_below="@+id/iv_setting_head"
+                        android:layout_marginTop="@dimen/dp50"
+                        android:gravity="center"
+                        android:maxLength="12"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/sp15" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_user_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/dp40"
+                    android:background="@null"
+                    android:drawableRight="@drawable/go_user_btn_selector"
+                    android:text="个人中心"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sp16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_ad_open"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_selector"
+                android:clickable="true"
+                android:paddingBottom="@dimen/dp40"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingTop="@dimen/dp40" >
+
+                <ImageView
+                    android:id="@+id/iv_icon0"
+                    android:layout_width="@dimen/dp32"
+                    android:layout_height="@dimen/dp32"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:src="@drawable/ic_ad_selector" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp30"
+                    android:layout_toRightOf="@+id/iv_icon0"
+                    android:text="@string/recommendation"
+                    android:textColor="@drawable/text_slide_selector"
+                    android:textSize="@dimen/sp16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_user_guide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_selector"
+                android:clickable="true"
+                android:paddingBottom="@dimen/dp40"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingTop="@dimen/dp40"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/iv_icon1"
+                    android:layout_width="@dimen/dp32"
+                    android:layout_height="@dimen/dp32"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:src="@drawable/ic_guide_selector" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp30"
+                    android:layout_toRightOf="@+id/iv_icon1"
+                    android:text="@string/user_guide"
+                    android:textColor="@drawable/text_slide_selector"
+                    android:textSize="@dimen/sp16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_check_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_selector"
+                android:clickable="true"
+                android:paddingBottom="@dimen/dp40"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingTop="@dimen/dp40" >
+
+                <ImageView
+                    android:id="@+id/iv_icon2"
+                    android:layout_width="@dimen/dp32"
+                    android:layout_height="@dimen/dp32"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:src="@drawable/ic_version_update_selector" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp30"
+                    android:layout_toRightOf="@+id/iv_icon2"
+                    android:text="@string/check_update"
+                    android:textColor="@drawable/text_slide_selector"
+                    android:textSize="@dimen/sp16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_app_share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_selector"
+                android:clickable="true"
+                android:paddingBottom="@dimen/dp40"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingTop="@dimen/dp40" >
+
+                <ImageView
+                    android:id="@+id/iv_icon3"
+                    android:layout_width="@dimen/dp32"
+                    android:layout_height="@dimen/dp32"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:src="@drawable/ic_app_share_selector" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp30"
+                    android:layout_toRightOf="@+id/iv_icon3"
+                    android:text="@string/app_share"
+                    android:textColor="@drawable/text_slide_selector"
+                    android:textSize="@dimen/sp16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_selector"
+                android:clickable="true"
+                android:paddingBottom="@dimen/dp40"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingTop="@dimen/dp40" >
+
+                <ImageView
+                    android:id="@+id/iv_icon4"
+                    android:layout_width="@dimen/dp32"
+                    android:layout_height="@dimen/dp32"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:src="@drawable/ic_feedback_selector" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp30"
+                    android:layout_toRightOf="@+id/iv_icon4"
+                    android:text="@string/feedback"
+                    android:textColor="@drawable/text_slide_selector"
+                    android:textSize="@dimen/sp16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_user_protocol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_selector"
+                android:clickable="true"
+                android:paddingBottom="@dimen/dp40"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingTop="@dimen/dp40" >
+
+                <ImageView
+                    android:id="@+id/iv_icon5"
+                    android:layout_width="@dimen/dp32"
+                    android:layout_height="@dimen/dp32"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:src="@drawable/ic_user_terms_selector" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp30"
+                    android:layout_toRightOf="@+id/iv_icon5"
+                    android:text="@string/user_protocol"
+                    android:textColor="@drawable/text_slide_selector"
+                    android:textSize="@dimen/sp16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_aboutus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_selector"
+                android:clickable="true"
+                android:paddingBottom="@dimen/dp40"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingTop="@dimen/dp40" >
+
+                <ImageView
+                    android:id="@+id/iv_icon6"
+                    android:layout_width="@dimen/dp32"
+                    android:layout_height="@dimen/dp32"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:src="@drawable/ic_about_us_selector" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp30"
+                    android:layout_toRightOf="@+id/iv_icon6"
+                    android:text="@string/about_us"
+                    android:textColor="@drawable/text_slide_selector"
+                    android:textSize="@dimen/sp16" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

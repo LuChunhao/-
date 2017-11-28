@@ -1,0 +1,13 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/waterfall_shadow_selector"
+    android:padding="@dimen/dp10" >
+
+    <ImageView
+        android:id="@+id/iv_show"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp205"
+        android:scaleType="centerCrop" />
+
+</RelativeLayout>

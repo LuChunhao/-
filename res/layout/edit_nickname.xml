@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp8"
+    android:paddingRight="@dimen/dp8"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:padding="@dimen/dp30" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入您的昵称"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp30"
+            android:text="例如:张三"
+            android:textColor="@color/font_lighter_gray"
+            android:textSize="@dimen/sp15" />
+
+        <EditText
+            android:id="@+id/et_input_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp30"
+            android:background="@null"
+            android:maxLength="12"
+            android:textColor="@color/titlebar_bg"
+            android:singleLine="true"
+            android:textSize="@dimen/sp16" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/titlebar_bg" />
+
+        <RelativeLayout
+            android:id="@+id/button_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp50"
+            android:paddingTop="@dimen/dp20" >
+
+            <Button
+                android:id="@+id/btn_cancel_nickname"
+                android:layout_width="@dimen/dp150"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp30"
+                android:layout_toLeftOf="@+id/btn_ensure_nickname"
+                android:background="@drawable/md_btn_selector"
+                android:text="取消"
+                android:textColor="@color/titlebar_bg"
+                android:textSize="@dimen/sp16" />
+
+            <Button
+                android:id="@+id/btn_ensure_nickname"
+                android:layout_width="@dimen/dp150"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/md_btn_selector"
+                android:text="确认"
+                android:textColor="@color/titlebar_bg"
+                android:textSize="@dimen/sp16" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

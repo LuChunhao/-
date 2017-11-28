@@ -1,0 +1,139 @@
+<resources>
+
+    <string name="back_confirm_text">再按一次退出</string>
+    <string name="recommend">首页推荐</string>
+    <string name="topic">晒晒</string>
+    <string name="my_topic">我的晒晒</string>
+    <string name="mystica">探秘</string>
+    <string name="category">所有分类</string>
+    <string name="user">个人中心</string>
+    <string name="find_passwd">找回密码</string>
+    <string name="user_guide">新手引导</string>
+	<string name="recommendation">精品推荐</string>
+    <string name="check_update">版本更新</string>
+    <string name="app_share">应用分享</string>
+    <string name="feedback">意见反馈</string>
+    <string name="user_protocol">用户协议</string>
+    <string name="about_us">关于我们</string>
+    <string name="album">相册</string>
+    <string name="publish_show">发表晒晒</string>
+    <string name="detail_title">商品详情</string>
+    <string name="topic_title">晒晒详情</string>
+    <string name="my_collection">我的收藏</string>
+    <string name="uncollect">取消收藏</string>
+    <string name="collect">收藏</string>
+    <string name="collect_failed">收藏失败</string>
+    <string name="uncollect_success">取消了收藏</string>
+    <string name="collect_success">收藏成功</string>
+    <string name="broswer_history">浏览历史</string>
+    <string name="update_loading">正在检查更新，请稍后。</string>
+    <string name="update_content">更新说明</string>
+    <string name="updateable_title">软件更新提示</string>
+    <string name="update_failed">软件检查更新失败</string>
+    <string name="no_update">当前已是最新版本啦</string>
+    <string name="qq">请留下您的联系方式</string>
+    <string name="qq_content">请留下您的QQ号/邮箱</string>
+    <string name="email_content">请输入您的邮箱</string>
+    <string name="email">邮箱：</string>
+    <string name="suggest_hint">疯狂吐槽...</string>
+    <string name="contact_us_detail">如果您有任何意见或者建议，请不要手下留情，尽情吐槽我们吧！</string>
+    <string name="not_null">意见或者建议不能为空</string>
+    <string name="error_email">请输入正确的邮箱地址</string>
+    <string name="commit_success">意见提交成功</string>
+    <string name="search">搜索</string>
+    <string name="search_hint">寻找商品</string>
+    <string name="comments_title">评论列表</string>
+    <string name="say_something">我也评论一句</string>
+    <string name="comment">发表</string>
+    <string name="commit_falied">评论失败</string>
+    <string name="commit_succed">评论成功</string>
+    <string name="goods_comment">商品评论</string>
+    <string name="delete_success">删除成功</string>
+    <string name="delete_failed">删除失败</string>
+    <string name="topic_comment">晒晒评论</string>
+    <string name="cancel">取消</string>
+    <string name="empty_data">暂无数据~</string>
+    <string name="text_indicator">%1$s/%2$s</string>
+    <!-- item -->
+    <string name="goods_price_discount">￥%1$s    %2$s</string>
+    <string name="goods_price">￥%1$s</string>
+    <string name="goods_sales">已销售%1$s件</string>
+    <string name="login_now">马上登录</string>
+    <string name="logout">注销登录</string>
+    <string name="edit_nickname">修改昵称</string>
+    <string name="login">登录</string>
+    <string name="commit">提交</string>
+    <string name="register">注册</string>
+    <string name="register_user">用户注册</string>
+    <string name="forget_passwd">忘记密码?</string>
+    <string name="account_empty">请输入用户名</string>
+    <string name="password_noenough">密码长度不足六位</string>
+    <string name="passwd_not_same">两次输入密码不一致</string>
+    <string name="logining">正在登录中,请稍后</string>
+    <string name="registering">正在注册中,请稍后</string>
+    <string name="register_succeed">注册成功！欢迎加入我们</string>
+    <string name="login_succeed">登录成功!</string>
+    <string name="drawer_open">打开</string>
+    <string name="drawer_close">关闭</string>
+
+    <string-array name="brands_tab_array">
+        <item>今日上新</item>
+        <item>昨日上新</item>
+        <item>最后疯抢</item>
+        <item>全部</item>
+    </string-array>
+    <string-array name="result_tab_array">
+        <item>人气</item>
+        <item>销量</item>
+        <item>价格</item>
+    </string-array>
+
+    <string name="app_link">#%1$s#%1$s，功能实用，界面时尚，使用流畅，真是%2$s的贴身小助手！大家快到%3$s下载吧。</string>
+    <string name="user_terms">用户注册及使用APP隐私协议
+\n在此特别提醒您（用户）在注册成为用户之前，请认真阅读本《用户协议》（以下简称“协议”），确保您充分理解本协议中各条款。请您审慎阅读并选择接受或不接受本协议。除非您接受本协议所有条款，否则您无权注册、登录或使用本协议所涉服务。您的注册、登录、使用等行为将视为对本协议的接受，并同意接受本协议各项条款的约束。本协议约定%1$s与用户之间关于“%1$s”软件服务（以下简称“服务”）的权利义务。“用户”是指注册、登录、使用本服务的个人。本协议可由%1$s随时更新，更新后的协议条款一旦公布即代替原来的协议条款，恕不再另行通知，用户可在本APP中查阅最新版协议条款。在修改协议条款后，如果用户不接受修改后的条款，请立即停止使用%1$s提供的服务，用户继续使用%1$s提供的服务将被视为接受修改后的协议。
+\n一、账号注册
+\n1、用户在使用本服务前需要注册一个“%1$s”账号。%1$s可以根据用户需求或产品需要对账号注册和绑定的方式进行变更，而无须事先通知用户。
+\n2、“%1$s”是基于商品推荐服务的APP产品，用户注册时应当授权%1$s公开及使用其个人信息方可成功注册“%1$s”账号。故用户完成注册即表明用户同意%1$s提取、公开及使用用户的信息。
+\n3、在用户注册及使用本服务时，%1$s需要搜集能识别用户身份的个人信息以便%1$s可以在必要时联系用户，或为用户提供更好的使用体验。%1$s搜集的信息包括但不限于用户的姓名、地址；%1$s同意对这些信息的使用将受限于第二条用户个人隐私信息保护的约束。
+\n二、用户个人隐私信息保护
+\n1、如果%1$s发现或收到他人举报或投诉用户违反本协议约定的，%1$s有权不经通知随时对相关内容，包括但不限于用户资料、发贴记录进行审查、删除，并视情节轻重对违规账号处以包括但不限于警告、账号封禁、设备封禁、功能封禁的处罚，且通知用户处理结果。
+\n2、因违反用户协议被封禁的用户，可以自行与%1$s联系。其中，被实施功能封禁的用户会在封禁期届满后自动恢复被封禁功能。被封禁用户可提交申诉，%1$s将对申诉进行审查，并自行合理判断决定是否变更处罚措施。
+\n3、用户理解并同意，%1$s有权依合理判断对违反有关法律法规或本协议规定的行为进行处罚，对违法违规的任何用户采取适当的法律行动，并依据法律法规保存有关信息向有关部门报告等，用户应承担由此而产生的一切法律责任。
+\n4、用户理解并同意，因用户违反本协议约定，导致或产生的任何第三方主张的任何索赔、要求或损失，包括合理的律师费，用户应当赔偿%1$s与合作公司、关联公司，并使之免受损害。
+\n三、用户发布内容规范
+\n1、本条所述内容是指用户使用%1$s的过程中所制作、上载、复制、发布、传播的任何内容，包括但不限于账号头像、名称、用户说明等注册信息及认证资料，或文字、语音、图片、视频、图文等发送、回复或自动回复消息和相关链接页面，以及其他使用账号或本服务所产生的内容。
+\n2、用户不得利用“%1$s”账号或本服务制作、上载、复制、发布、传播如下法律、法规和政策禁止的内容：
+\n(1)反对宪法所确定的基本原则的；
+\n(2)危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；
+\n(3)损害国家荣誉和利益的；
+\n(4)煽动民族仇恨、民族歧视，破坏民族团结的；
+\n(5)破坏国家宗教政策，宣扬邪教和封建迷信的；
+\n(6)散布谣言，扰乱社会秩序，破坏社会稳定的；
+\n(7)散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；
+\n(8)侮辱或者诽谤他人，侵害他人合法权益的；
+\n(9)含有法律、行政法规禁止的其他内容的信息。
+\n3、用户不得利用“%1$s”账号或本服务制作、上载、复制、发布、传播如下干扰“%1$s”正常运营，以及侵犯其他用户或第三方合法权益的内容：
+\n(1)含有任何性或性暗示的；
+\n(2)含有辱骂、恐吓、威胁内容的；
+\n(3)含有骚扰、垃圾广告、恶意信息、诱骗信息的；
+\n(4)涉及他人隐私、个人信息或资料的；
+\n(5)侵害他人名誉权、肖像权、知识产权、商业秘密等合法权利的；
+\n(6)含有其他干扰本服务正常运营和侵犯其他用户或第三方合法权益内容的信息。
+\n四、使用规则
+\n1、用户在本服务中或通过本服务所传送、发布的任何内容并不反映或代表，也不得被视为反映或代表%1$s的观点、立场或政策，%1$s对此不承担任何责任。
+\n2、用户不得利用“%1$s”账号或本服务进行如下行为：
+\n(1)提交、发布虚假信息，或盗用他人头像或资料，冒充、利用他人名义的；
+\n(2)强制、诱导其他用户关注、点击链接页面或分享信息的；
+\n(3)虚构事实、隐瞒真相以误导、欺骗他人的；
+\n(4)利用技术手段批量建立虚假账号的；
+\n(5)利用“%1$s”账号或本服务从事任何违法犯罪活动的；
+\n(6)制作、发布与以上行为相关的方法、工具，或对此类方法、工具进行运营或传播，无论这些行为是否为商业目的；
+\n(7)其他违反法律法规规定、侵犯其他用户合法权益、干扰“%1$s”正常运营或%1$s未明示授权的行为。
+\n3、用户须对利用“%1$s”账号或本服务传送信息的真实性、合法性、无害性、准确性、有效性等全权负责，与用户所传播的信息相关的任何法律责任由用户自行承担，与%1$s无关。如因此给%1$s或第三方造成损害的，用户应当依法予以赔偿。
+\n4、%1$s提供的服务中可能包括广告，用户同意在使用过程中显示%1$s和第三方供应商、合作伙伴提供的广告。除法律法规明确规定外，用户应自行对依该广告信息进行的交易负责，对用户因依该广告信息进行的交易或前述广告商提供的内容而遭受的损失或损害，%1$s不承担任何责任。
+\n五、其他
+\n1、%1$s郑重提醒用户注意本协议中免除%1$s责任和限制用户权利的条款，请用户仔细阅读，自主考虑风险。未成年人应在法定监护人的陪同下阅读本协议。
+\n2、本协议的效力、解释及纠纷的解决，适用于中华人民共和国法律。若用户和%1$s之间发生任何纠纷或争议，首先应友好协商解决，协商不成的，用户同意将纠纷或争议提交%1$s住所地有管辖权的人民法院管辖。
+\n3、本协议的任何条款无论因何种原因无效或不具可执行性，其余条款仍有效，对双方具有约束力。</string>
+
+</resources>

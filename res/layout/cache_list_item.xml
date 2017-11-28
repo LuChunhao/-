@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_shadow"
+    android:padding="@dimen/dp10" >
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="@dimen/dp210"
+        android:layout_height="@dimen/dp205"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_goods_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_pic"
+        android:layout_marginLeft="@dimen/dp18"
+        android:layout_toRightOf="@+id/iv_pic"
+        android:maxLines="2"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp14"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_current_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp18"
+        android:layout_toRightOf="@+id/iv_pic"
+        android:textColor="@color/text_color_red"
+        android:textSize="@dimen/sp14"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_original_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_toRightOf="@+id/tv_current_price"
+        android:textColor="@color/text_color_gray"
+        android:textSize="@dimen/sp14" />
+
+    <TextView
+        android:id="@+id/tv_discount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_pic"
+        android:layout_marginLeft="@dimen/dp18"
+        android:layout_toRightOf="@+id/iv_pic"
+        android:singleLine="true"
+        android:textColor="@color/text_color_gray"
+        android:textSize="@dimen/sp14" />
+
+</RelativeLayout>
